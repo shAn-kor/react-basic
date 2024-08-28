@@ -1,16 +1,21 @@
-import StateComponent from "./component/StateComponent";
+
 import {Fragment} from 'react';
-import StateComponentQ from "./component/StateComponentQ";
-import ClassComponent from "./component/ClassComponent";
+import './App.css';
+import styled from './App.module.css';
 
 function App() {
   return (
     <Fragment>
-      <StateComponent/>
-      <hr/>
-      <StateComponentQ/>
-      <hr/>
-      <ClassComponent name="홍길동" age={20}/>
+      <div className='app-title'>
+        css 파일로 디자인
+      </div>
+      <div style={{color: 'blue', border: '1px solid #777'}}>
+        직접 디자인
+      </div>
+      <div className={styled.appWrap}>
+        <p className={styled.title}>모듈로 디자인</p>
+        <p className='content'>글로벌디자인</p>
+      </div>
     </Fragment>
   );
 }

@@ -1,0 +1,12 @@
+.appWrap {
+  border: 1px solid #777;
+}
+
+.appWrap > .title {
+  background-color: yellow;
+}
+
+:global .content {
+  color : green;
+  font-size: 15px;
+}
